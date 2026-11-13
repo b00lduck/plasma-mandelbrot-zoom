@@ -5,6 +5,20 @@ screen — that spans all screens as one picture. Every 30 s it picks a random, 
 (zoom + pan) and then crossfades into the next one, with a new colour palette per
 shot. Rendered on the GPU with perturbation theory, so it zooms to ~10⁻¹⁰.
 
+## Screenshots
+
+Rendered across a dual-screen canvas (3440 + 2560 px side by side, scaled down).
+Shown at 70 % brightness so they're visible here; the default is a dim 20 %:
+
+![Spiral](docs/screenshots/spiral.jpg)
+![Swirl](docs/screenshots/swirl.jpg)
+![Period-2 bulb with antenna](docs/screenshots/antenna.jpg)
+![Mini Mandelbrot](docs/screenshots/minibrot.jpg)
+
+Same spiral at the default 20 % brightness, as it looks on the desktop:
+
+![Spiral at default brightness](docs/screenshots/spiral-default-brightness.jpg)
+
 ## Install
 
 Requires Plasma 6, Qt 6 and `qt6-shadertools` (for `qsb`).
@@ -85,4 +99,5 @@ plugin/contents/ui/MandelView.qml timing, crossfade, keyframes, motion, geometry
 plugin/contents/ui/finder.mjs     location search, reference orbit, palettes
 plugin/contents/ui/config.qml     settings page
 plugin/contents/shaders/mandel.frag (+ .qsb)  fractal shader
+docs/screenshots/                 README images
 ```
