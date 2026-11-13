@@ -10,7 +10,8 @@ shot. Rendered on the GPU with perturbation theory, so it zooms to ~10⁻¹⁰.
 Requires Plasma 6, Qt 6 and `qt6-shadertools` (for `qsb`).
 
 ```sh
-make install          # compile shader, install/upgrade plugin, restart plasmashell
+make install          # compile shader, install/upgrade plugin for your user, restart plasmashell
+make install-system   # same, system-wide (sudo) — needed for the login screen
 ```
 
 Then pick **Mandelbrot Zoom** under *Configure Desktop and Wallpaper → Wallpaper type*
@@ -76,7 +77,7 @@ At 10 fps it adds roughly 6–8 W over a plain-colour wallpaper on a Radeon R970
 ## Files
 
 ```
-Makefile                          build shader, install
+Makefile                          build shader; install (user) / install-system (global)
 plugin/metadata.json              plugin id: local.mandelbrot
 plugin/contents/config/main.xml   settings schema
 plugin/contents/ui/main.qml       WallpaperItem entry point, maps settings

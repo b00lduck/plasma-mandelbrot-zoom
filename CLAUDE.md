@@ -7,6 +7,7 @@ screens. QML/JS + one GLSL shader, no C++. See README.md for features and archit
 
 - `make plugin` — compile `mandel.frag` → `mandel.frag.qsb` (needed after every shader edit; the .qsb is what's loaded).
 - `make install` — upgrade the installed package and restart plasmashell (QML is cached; a restart is required to see changes).
+- `make install-system` — same into `/usr/share/plasma/wallpapers` via sudo (login screen greeter runs as `plasmalogin` and only sees global plugins). The user has to run it (sudo); remind them after plugin changes if they use it on the login screen.
 - Errors: `journalctl --user -u plasma-plasmashell --since "-1min" | grep -i mandel`
 
 ## Testing outside Plasma
