@@ -1,7 +1,7 @@
-# Mandelbrot Zoom — KDE Plasma wallpaper
+# Mandelbrot Zoom — animated backgrounds for KDE Plasma
 
-An animated Mandelbrot wallpaper for KDE Plasma 6 that spans all screens as one
-picture. Every 30 s it picks a random, interesting spot; each spot drifts slowly
+An animated Mandelbrot background for KDE Plasma 6 — desktop, lock screen and login
+screen — that spans all screens as one picture. Every 30 s it picks a random, interesting spot; each spot drifts slowly
 (zoom + pan) and then crossfades into the next one, with a new colour palette per
 shot. Rendered on the GPU with perturbation theory, so it zooms to ~10⁻¹⁰.
 
