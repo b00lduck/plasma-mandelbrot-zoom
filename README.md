@@ -7,7 +7,7 @@ shot. Rendered on the GPU with perturbation theory, so it zooms to ~10⁻¹⁰.
 
 ## Screenshots
 
-Rendered across a dual-screen canvas (3440 + 2560 px side by side, scaled down).
+Rendered at 2000×480, the proportions of a 3440 + 2560 px dual-screen setup.
 Shown at 70 % brightness so they're visible here; the default is a dim 20 %:
 
 ![Spiral](docs/screenshots/spiral.jpg)
