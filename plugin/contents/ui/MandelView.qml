@@ -270,6 +270,7 @@ Item {
                                                          view.screenOff.y - view.margin + y)
                 property vector2d off
                 property real ps: 1e-3
+                property vector2d refC: kb.loc ? Qt.vector2d(kb.loc.cx, kb.loc.cy) : Qt.vector2d(0, 0)
                 property int refLen: kb.loc ? kb.loc.refLen : 0
                 property int maxIter: kb.loc ? kb.loc.maxIter : 300
                 property vector3d c0: kb.loc ? Qt.vector3d(...kb.loc.pal.cols[0]) : Qt.vector3d(0, 0, 0)

@@ -55,6 +55,10 @@ At 10 fps it adds roughly 6–8 W over a plain-colour wallpaper on a Radeon R970
 - **Perturbation rendering** (`mandel.frag`): the reference orbit is packed as raw
   float32 bytes into an RGB `Canvas` texture; the shader iterates per-pixel float
   deltas with Zhuoran rebasing.
+- **Shader optimisations:** interior points exit early (the derivative ∏2z collapses once
+  the orbit falls into an attracting cycle), the main cardioid/bulb are rejected
+  analytically when zoomed out, and antialiasing is adaptive — a distance estimate
+  decides per pixel whether extra samples are needed (≈40 % less work at 2×2 AA).
 - **Cheap animation:** the fractal is only rendered at keyframes, ahead of time into a
   hidden buffer, one strip per frame. In between, the cached texture is just
   scaled/translated to follow the drift.
