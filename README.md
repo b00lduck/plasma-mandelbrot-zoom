@@ -23,6 +23,16 @@ qdbus6 org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript \
 
 Uninstall: `kpackagetool6 -t Plasma/Wallpaper -r local.mandelbrot`
 
+### Lock screen and login screen
+
+- **Lock screen:** System Settings → Screen Locking → Appearance → wallpaper type
+  *Mandelbrot Zoom* (or `kwriteconfig6 --file kscreenlockerrc --group Greeter --key WallpaperPlugin local.mandelbrot`).
+- **Login screen** (Plasma Login Manager): the greeter runs as user `plasmalogin` and only
+  sees system-wide plugins, so install it globally with `make install-system` (sudo), then
+  pick it under System Settings → Login Screen. Repeat `make install-system` after changes.
+
+Both have their own settings, separate from the desktop's.
+
 ## Settings
 
 | Setting | Default | |
