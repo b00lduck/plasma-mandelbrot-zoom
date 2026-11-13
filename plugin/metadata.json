@@ -1,0 +1,19 @@
+{
+    "KPackageStructure": "Plasma/Wallpaper",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "b00lduck"
+            }
+        ],
+        "Category": "",
+        "Description": "Animated Mandelbrot zoom spanning all screens",
+        "Icon": "preferences-desktop-wallpaper",
+        "Id": "local.mandelbrot",
+        "License": "GPLv2+",
+        "Name": "Mandelbrot Zoom",
+        "Version": "1.0",
+        "Website": "https://github.com/b00lduck/plasma-mandelbrot-zoom"
+    },
+    "X-KDE-ParentApp": "org.kde.plasmashell"
+}

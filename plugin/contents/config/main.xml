@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name=""/>
+  <group name="General">
+    <entry name="Interval" type="Int"><label>Seconds per location</label><default>30</default></entry>
+    <entry name="Fade" type="Int"><label>Crossfade duration in seconds</label><default>3</default></entry>
+    <entry name="ZoomPerSlot" type="Int"><label>Zoom factor per location, times ten</label><default>20</default></entry>
+    <entry name="MaxZoom" type="Int"><label>Maximum zoom depth (powers of ten)</label><default>10</default></entry>
+    <entry name="Brightness" type="Int"><label>Brightness percent</label><default>20</default></entry>
+    <entry name="Saturation" type="Int"><label>Saturation percent</label><default>60</default></entry>
+    <entry name="Rerender" type="Int"><label>Seconds between full re-renders</label><default>10</default></entry>
+    <entry name="MaxFps" type="Int"><label>Maximum frames per second (vsync-aligned)</label><default>10</default></entry>
+    <entry name="Speed" type="Int"><label>Movement speed percent</label><default>15</default></entry>
+    <entry name="Antialiasing" type="Int"><label>Supersampling, samples per axis</label><default>2</default></entry>
+  </group>
+</kcfg>
