@@ -19,6 +19,11 @@ Same spiral at the default 20 % brightness, as it looks on the desktop:
 
 ![Spiral at default brightness](docs/screenshots/spiral-default-brightness.jpg)
 
+On the lock screen (one screen shown, 70 % brightness; the lock screen blurs the
+background behind the login box):
+
+![Lock screen](docs/screenshots/lockscreen.jpg)
+
 ## Install
 
 Requires Plasma 6, Qt 6 and `qt6-shadertools` (for `qsb`).
